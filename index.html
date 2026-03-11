@@ -11,16 +11,16 @@
 
 <h1>Javascript Conditional Statements</h1>
 <input type="text" id="Age" class="form-control" placeholder="type here..."> <!--asks for user input-->
-<button class="btn btn-info" onclick="checkAge()"></button>  <!--function executes when button is plressed-->
+<button class="btn btn-info" onclick="checkAge()">Click Me</button>  <!--function executes when button is plressed-->
     
     <script>
         //checkAge
 
-        var age = document.getElementById("Age").value; //id is the id of the input box so it will get the input.
-
         function checkAge(){
-        
-            //isNaN means the input is not a number. This is going to check if the input is a numerical value.
+
+            var age = document.getElementById("Age").value; //id is the id of the input box so it will get the input.
+            
+                //isNaN means the input is not a number. This is going to check if the input is a numerical value.
         if (isNaN(age) || age < 0){
             alert.("Please input a valid number.");
         }
